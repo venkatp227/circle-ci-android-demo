@@ -1,7 +1,9 @@
 version: 2
 jobs:
+  general:
+    build_dir: ~/code/
   build:
-    working_directory: ~/
+    working_directory: ~/code
     docker:
       - image: circleci/android:api-25-alpha
     filters:
